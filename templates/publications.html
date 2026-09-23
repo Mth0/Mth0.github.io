@@ -1,0 +1,27 @@
+{% extends "section.html" %}
+
+{% block content %}
+<h1>Publications</h1>
+<ol>
+    {% for page in section.pages %}
+    <li>
+        <strong><a href="{{page.permalink | safe}}">{{page.title}}</a></strong><br>
+        {{page.extra.authors}}<br>
+        <em>{{page.extra.where}}</em>, {{page.year}}
+        {% if page.extra.pdf is defined -%}
+        <a class="symbol-link" href="{{page.extra.pdf}}">📄</a>
+        {%- endif %}
+        {% if page.extra.doi is defined -%}
+        <a class="symbol-link" href="https://dx.doi.org/{{page.extra.doi | safe}}">🔗</a>
+        {%- endif %}
+    </li>
+    {% endfor %}
+</ol>
+<ul>
+    <li>
+        <strong>Uma prova do algoritmo de Brzozowski via álgebras de Kleene</strong> <br>
+        <em>Baccalaureate Course Completion Paper</em>, 2026
+        <a class="symbol-link" href="matheusdoo_monografia.pdf">📄</a>
+    </li>
+</ul>
+{% endblock content %}
