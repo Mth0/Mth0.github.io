@@ -16,4 +16,8 @@ Bacharel em Ciência da Computação pela Universidade Federal do Rio de Janeiro
 
 ## Publicações
 
-Veja a lista completa [aqui](/publications/)
+Você pode ver a lista completa de minhas publicações [aqui](/publications/).
+
+## Projetos
+
+Tenho alguns projetos feitos ao decorrer de minha graduação. Você os pode conferir [aqui](/projects/).
